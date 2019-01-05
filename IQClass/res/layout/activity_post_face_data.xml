@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_post_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <Button
+                android:id="@+id/btn_con_return"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button_div"
+                android:text="返回" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="个人脸部信息录入"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFFFF"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_post_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.点击照片采集，拍下带有自己脸部的照片\n2.点击人脸识别，确认照片中存在脸部数据\n3.点击数据上传，存储脸部信息\n4.每位学生用户可以上传10张不同照片中自\n  己本人的脸部信息数据,来提高识别度"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" >
+
+        <Button
+            android:id="@+id/btn_getPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_div"
+            android:text="获取照片" />
+
+        <Button
+            android:id="@+id/btn_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background_button_div"
+            android:text="识别人脸" />
+
+        <Button
+            android:id="@+id/btn_gen_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background_button_div"
+            android:text="生成数据" />
+    </LinearLayout>
+
+</RelativeLayout>
